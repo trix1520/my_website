@@ -44,7 +44,7 @@
                 </div>
                 
                 <div class="menu-links">
-                    <a href="index.html#hero" class="menu-link active" data-section="hero">
+                    <a href="index.html#hero" class="menu-link" data-section="hero">
                         <i class="fas fa-home"></i>
                         <span>Главная</span>
                     </a>
@@ -68,7 +68,7 @@
                         <i class="fas fa-envelope"></i>
                         <span>Контакты</span>
                     </a>
-                    <a href="reviews.html" class="menu-link">
+                    <a href="reviews.html" class="menu-link active">
                         <i class="fas fa-comment-alt"></i>
                         <span>Отзывы</span>
                     </a>
@@ -142,7 +142,6 @@
                         <a href="https://wa.me/79309708254" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
                         <a href="https://t.me/+79309708254" aria-label="Telegram" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
                     </div>
-                    <button class="callback-button">Заказать звонок</button>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -156,23 +155,6 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <div class="modal" id="callbackModal">
-        <div class="modal-content">
-            <button class="close-modal" aria-label="Закрыть окно">&times;</button>
-            <h3>Заказать звонок</h3>
-            <form class="modal-form" id="callbackForm">
-                <input type="text" name="name" placeholder="Ваше имя" required autocomplete="name">
-                <input type="tel" name="phone" placeholder="Ваш телефон" required autocomplete="tel">
-                <textarea name="question" placeholder="Ваш вопрос (необязательно)"></textarea>
-                <button type="submit">Отправить</button>
-                <p class="privacy-text">Нажимая кнопку, вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a></p>
-            </form>
-        </div>
-    </div>
-
-        
-    </div>
-
     <script src="script.js"></script>
     
     <script>
@@ -181,7 +163,7 @@
         * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
         
         var disqus_config = function () {
-            this.page.url = 'https://vodanadolgo.com/reviews.html';  // Замените на канонический URL вашей страницы
+            this.page.url = 'https://vodanadolgo.ru/reviews.html';  // Замените на канонический URL вашей страницы
             this.page.identifier = 'reviews-page'; // Замените на уникальный идентификатор вашей страницы
         };
         

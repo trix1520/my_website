@@ -14,10 +14,7 @@
     
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style">
     <link rel="preload" href="style.css" as="style">
-    <link rel="preload" href="script.js" as="script">
     <link rel="canonical" href="https://vodanadolgo.ru"/>
-    <link rel="preload" href="images/hero-bg.webp" as="image">
-    <link rel="preload" href="images/logo.webp" as="image">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
 
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
@@ -78,7 +75,7 @@
                     </picture>
                     <div class="logo-text">
                         <span class="logo-part1">Вода</span>
-                        <span class="logo-part2">НаДолго</span>
+                        <span class="logo-part2">НаДолgo</span>
                     </div>
                 </a>
                 <button id="menuBtn" class="menu-btn" aria-label="Открыть меню">
@@ -160,7 +157,7 @@
         <main>
             <section id="hero" class="hero">
                 <div class="hero-content">
-                    <h1>Профессиональное водоснабжение</h1>
+                    <h2>Профессиональное водоснабжение</h2>
                     <p>Качественные решения для вашего дома и участка с гарантией</p>
                     <a href="#contacts" class="btn">Заказать консультацию</a>
                 </div>
@@ -186,7 +183,6 @@
                             <li>Консервация старых колодцев</li>
                             <li>Разморозка колодцев</li>
                         </ul>
-                        <button class="service-button" data-service="Колодцы">Узнать стоимость</button>
                     </div>
 
                     <div class="service-card">
@@ -202,7 +198,6 @@
                             <li>Автоматизация водоснабжения</li>
                             <li>Системы полива</li>
                         </ul>
-                        <button class="service-button" data-service="Водоснабжение">Узнать стоимость</button>
                     </div>
 
                     <div class="service-card">
@@ -218,7 +213,6 @@
                             <li>Аварийный выезд</li>
                             <li>Гарантийное обслуживание</li>
                         </ul>
-                        <button class="service-button" data-service="Дополнительные услуги">Узнать стоимость</button>
                     </div>
                 </div>
             </section>
@@ -283,7 +277,8 @@
                     <a href="images/kolodec1.webp" class="gallery-item" data-sub-html="<h4>Новый колодец</h4><p>Глубина 8 колец, установка донного фильтра</p>">
                         <picture>
                             <source srcset="images/kolodec1.webp" type="image/webp">
-                            <img src="images/kolodec1.webp" alt="Колодец глубиной 8 колец с донным фильтром" loading="lazy" width="400" height="300">
+                            <source srcset="images/kolodec1.jpg" type="image/jpeg">
+                            <img src="images/kolodec1.jpg" alt="Колодец глубиной 8 колец с донным фильтром" loading="lazy" width="400" height="300">
                         </picture>
                         <div class="gallery-overlay">
                             <i class="fas fa-search-plus"></i>
@@ -293,6 +288,7 @@
                     <a href="images/kolodec2.jpg" class="gallery-item" data-sub-html="<h4>Чистка колодца</h4><p>Полная чистка и дезинфекция колодца</p>">
                         <picture>
                             <source srcset="images/kolodec2.webp" type="image/webp">
+                            <source srcset="images/kolodec2.jpg" type="image/jpeg">
                             <img src="images/kolodec2.jpg" alt="Процесс чистки и дезинфекции колодца" loading="lazy" width="400" height="300">
                         </picture>
                         <div class="gallery-overlay">
@@ -303,6 +299,7 @@
                     <a href="images/vodosnabzhenie1.jpg" class="gallery-item" data-sub-html="<h4>Водоснабжение дома</h4><p>Подключение воды в дом с установкой насосной станции</p>">
                         <picture>
                             <source srcset="images/vodosnabzhenie1.webp" type="image/webp">
+                            <source srcset="images/vodosnabzhenie1.jpg" type="image/jpeg">
                             <img src="images/vodosnabzhenie1.jpg" alt="Подключение воды в дом с насосной станцией" loading="lazy" width="400" height="300">
                         </picture>
                         <div class="gallery-overlay">
@@ -313,6 +310,7 @@
                     <a href="images/kolodec3.jpg" class="gallery-item" data-sub-html="<h4>Ремонт колодца</h4><p>Укрепление шахты колодца</p>">
                         <picture>
                             <source srcset="images/kolodec3.webp" type="image/webp">
+                            <source srcset="images/kolodec3.jpg" type="image/jpeg">
                             <img src="images/kolodec3.jpg" alt="Ремонт и укрепление шахты колодца" loading="lazy" width="400" height="300">
                         </picture>
                         <div class="gallery-overlay">
@@ -323,6 +321,7 @@
                     <a href="images/filter1.jpg" class="gallery-item" data-sub-html="<h4>Установка фильтров</h4><p>Монтаж системы очистки воды</p>">
                         <picture>
                             <source srcset="images/filter1.webp" type="image/webp">
+                            <source srcset="images/filter1.jpg" type="image/jpeg">
                             <img src="images/filter1.jpg" alt="Установка системы фильтрации воды" loading="lazy" width="400" height="300">
                         </picture>
                         <div class="gallery-overlay">
@@ -333,6 +332,7 @@
                     <a href="images/poliv1.jpg" class="gallery-item" data-sub-html="<h4>Система полива</h4><p>Автоматическая система полива участка</p>">
                         <picture>
                             <source srcset="images/poliv1.webp" type="image/webp">
+                            <source srcset="images/poliv1.jpg" type="image/jpeg">
                             <img src="images/poliv1.jpg" alt="Автоматическая система полива участка" loading="lazy" width="400" height="300">
                         </picture>
                         <div class="gallery-overlay">
@@ -340,19 +340,6 @@
                             <p>Система полива</p>
                         </div>
                     </a>
-                </div>
-            </section>
-
-            <section class="cta-section">
-                <div class="cta-content">
-                    <h2>Нужна консультация специалиста?</h2>
-                    <p>Оставьте заявку и мы перезвоним вам в течение 15 минут</p>
-                    <form class="cta-form" id="ctaForm">
-                        <input type="text" name="name" placeholder="Ваше имя" required>
-                        <input type="tel" name="phone" placeholder="Ваш телефон" required>
-                        <button type="submit">Заказать звонок</button>
-                    </form>
-                    <p class="privacy-text">Нажимая кнопку, вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a></p>
                 </div>
             </section>
 
@@ -421,7 +408,7 @@
                         </div>
                     </div>
                     <div class="contacts-map">
-                        <iframe src="https://yandex.ru/map-widget/v1/?lang=ru_RU&scroll=true" 
+                        <iframe src="https://yandex.ru/map-widget/v1/?ll=37.617635%2C55.755814&z=10" 
                             frameborder="0" 
                             allowfullscreen="true" 
                             loading="lazy" 
@@ -458,7 +445,6 @@
                         <a href="https://wa.me/79309708254" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
                         <a href="https://t.me/+79309708254" aria-label="Telegram" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
                     </div>
-                    <button class="callback-button">Заказать звонок</button>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -472,23 +458,7 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <div class="modal" id="callbackModal">
-        <div class="modal-content">
-            <button class="close-modal" aria-label="Закрыть окно">&times;</button>
-            <h3>Заказать звонок</h3>
-            <form class="modal-form" id="callbackForm">
-                <input type="text" name="name" placeholder="Ваше имя" required autocomplete="name">
-                <input type="tel" name="phone" placeholder="Ваш телефон" required autocomplete="tel">
-                <textarea name="question" placeholder="Ваш вопрос (необязательно)"></textarea>
-                <button type="submit">Отправить</button>
-                <p class="privacy-text">Нажимая кнопку, вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a></p>
-            </form>
-        </div>
-    </div>
-    
     <script src='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js'></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/6.4.3/imask.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
-

@@ -364,6 +364,9 @@ header {
     background-color: #0077b3;
 }
 
+
+
+
 /* основное содержимое */
 main {
     flex: 1;
@@ -744,123 +747,6 @@ section {
     padding: 0 15px;
 }
 
-/* Стили для модального окна изображений */
-.image-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.95);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 3000;
-    cursor: zoom-out;
-}
-
-.image-modal img {
-    max-width: 90%;
-    max-height: 90%;
-    object-fit: contain;
-    border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-}
-
-.image-modal button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: white;
-    font-size: 2rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 3001;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* cta section */
-.cta-section {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: white;
-    text-align: center;
-    padding: 4rem 0;
-}
-
-.cta-content {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.cta-section h2 {
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
-    font-family: 'montserrat', sans-serif;
-}
-
-.cta-section p {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    opacity: 0.9;
-}
-
-.cta-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.cta-form input {
-    padding: 15px;
-    border-radius: var(--border-radius);
-    border: none;
-    font-size: 1rem;
-    transition: var(--transition);
-}
-
-.cta-form input:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
-}
-
-.cta-form button {
-    grid-column: span 2;
-    padding: 15px;
-    background: white;
-    color: var(--primary-color);
-    border: none;
-    border-radius: var(--border-radius);
-    font-weight: 600;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: var(--transition);
-}
-
-.cta-form button:hover {
-    background: var(--dark-color);
-    color: white;
-    transform: translatey(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.privacy-text {
-    font-size: 0.85rem;
-    opacity: 0.8;
-    margin-top: 20px;
-}
-
-.privacy-text a {
-    color: white;
-    text-decoration: underline;
-}
 
 /* about section */
 .about-section {
@@ -1082,13 +968,11 @@ footer {
 
 .footer-bottom {
     text-align: center;
-    padding: 1.5rem 0;
-    background-color: rgba(0, 0, 0, 0.2);
     margin-top: 3rem;
     font-size: 0.9rem;
     opacity: 0.8;
 }
-
+ 
 .footer-bottom a {
     color: var(--primary-color);
     text-decoration: none;
@@ -1126,113 +1010,6 @@ footer .social-links a[aria-label="telegram"] {
     background-color: #0088cc;
 }
 
-/* modal */
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2000;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    backdrop-filter: blur(5px);
-}
-
-.modal.show {
-    opacity: 1;
-    visibility: visible;
-}
-
-.modal-content {
-    background: white;
-    border-radius: var(--border-radius);
-    padding: 2.5rem;
-    max-width: 500px;
-    width: 90%;
-    position: relative;
-    transform: translatey(20px);
-    transition: all 0.3s ease;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.modal.show .modal-content {
-    transform: translatey(0);
-}
-
-.close-modal {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #666;
-    transition: color 0.3s;
-}
-
-.close-modal:hover {
-    color: var(--accent-color);
-}
-
-.modal h3 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    color: var(--dark-color);
-    font-size: 1.5rem;
-}
-
-.modal-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.modal-form input, .modal-form textarea {
-    padding: 15px;
-    border-radius: var(--border-radius);
-    border: 1px solid #ddd;
-    font-size: 1rem;
-    transition: var(--transition);
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.modal-form input:focus, .modal-form textarea:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
-}
-
-.modal-form textarea {
-    min-height: 100px;
-    resize: vertical;
-}
-
-.modal-form button {
-    padding: 15px;
-    background: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: var(--border-radius);
-    font-weight: 600;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: var(--transition);
-    margin-top: 10px;
-}
-
-.modal-form button:hover {
-    background: var(--secondary-color);
-    transform: translatey(-3px);
-    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
-}
 
 /* back to top button */
 .back-to-top {
@@ -1275,30 +1052,6 @@ footer .social-links a[aria-label="telegram"] {
     opacity: 0;
     transform: translatex(100%);
     transition: all 0.3s ease;
-}
-
-.success-modal.show {
-    opacity: 1;
-    transform: translatex(0);
-}
-
-.success-modal-content {
-    background: #4caf50;
-    color: white;
-    padding: 15px 20px;
-    border-radius: var(--border-radius);
-    display: flex;
-    align-items: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-.success-modal-content i {
-    font-size: 1.5rem;
-    margin-right: 10px;
-}
-
-.error-modal-content {
-    background: #f44336;
 }
 
 /* loading spinner */
@@ -1382,14 +1135,6 @@ input.error + .error-message {
         font-size: 1.1rem;
     }
 
-    .cta-form {
-        grid-template-columns: 1fr;
-    }
-
-    .cta-form button {
-        grid-column: span 1;
-    }
-
     .contacts-info {
         grid-template-columns: 1fr;
     }
@@ -1448,9 +1193,6 @@ input.error + .error-message {
         grid-template-columns: 1fr;
     }
 
-    .modal-content {
-        padding: 1.5rem;
-    }
     .logo-img {
         width: 40px;
         height: 40px;
@@ -1495,4 +1237,46 @@ input.error + .error-message {
     margin: 0 auto;
     max-width: 800px;
     padding: 0 20px;
+}
+
+/* Добавьте в конец файла style.css */
+.image-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 3000;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-modal.active {
+    display: flex;
+}
+
+.image-modal img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.image-modal button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 3001;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
