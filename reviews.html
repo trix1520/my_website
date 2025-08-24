@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы | Вода Надолго</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <meta name="theme-color" content="#3498db">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <div class="header-container">
+                <a href="index.html#hero" class="logo" aria-label="На главную">
+                    <picture>
+                        <source srcset="images/logo.webp" type="image/webp">
+                        <img src="images/logo.png" alt="Логотип" class="logo-img" width="60" height="60">
+                    </picture>
+                    <div class="logo-text">
+                        <span class="logo-part1">Вода</span>
+                        <span class="logo-part2">НаДолго</span>
+                    </div>
+                </a>
+                <button id="menuBtn" class="menu-btn" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+        <nav id="sideMenu" class="side-menu">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h3>Меню</h3>
+                    <button id="closeMenuBtn" class="close-btn" aria-label="Закрыть меню">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <div class="menu-links">
+                    <a href="index.html#hero" class="menu-link active" data-section="hero">
+                        <i class="fas fa-home"></i>
+                        <span>Главная</span>
+                    </a>
+                    <a href="index.html#services" class="menu-link" data-section="services">
+                        <i class="fas fa-concierge-bell"></i>
+                        <span>Услуги</span>
+                    </a>
+                    <a href="index.html#advantages" class="menu-link" data-section="advantages">
+                        <i class="fas fa-star"></i>
+                        <span>Преимущества</span>
+                    </a>
+                    <a href="index.html#gallery" class="menu-link" data-section="gallery">
+                        <i class="fas fa-camera"></i>
+                        <span>Наши работы</span>
+                    </a>
+                    <a href="index.html#about" class="menu-link" data-section="about">
+                        <i class="fas fa-info-circle"></i>
+                        <span>О нас</span>
+                    </a>
+                   <a href="index.html#contacts" class="menu-link" data-section="contacts">
+                        <i class="fas fa-envelope"></i>
+                        <span>Контакты</span>
+                    </a>
+                    <a href="reviews.html" class="menu-link">
+                        <i class="fas fa-comment-alt"></i>
+                        <span>Отзывы</span>
+                    </a>
+                </div>
+
+                <div class="menu-footer">
+                    <div class="phone-container">
+                        <a href="tel:+79309708254" class="phone-link">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+7 (930) 970-82-54</span>
+                        </a>
+                        <p class="call-text">Звоните с 8:00 до 20:00</p>
+                        
+                        <div class="messenger-buttons">
+                            <a href="https://wa.me/79309708254" class="messenger-btn whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Написать в WhatsApp">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                            <a href="https://t.me/+79309708254" class="messenger-btn telegram" target="_blank" rel="noopener noreferrer" aria-label="Написать в Telegram">
+                                <i class="fab fa-telegram"></i> Telegram
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://wa.me/79309708254" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://t.me/+79309708254" aria-label="Telegram" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="menu-overlay"></div>
+        
+
+        <main>
+            <section class="reviews-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Отзывы наших клиентов</h2>
+                        <p class="section-subtitle">Поделитесь своим мнением или прочтите, что говорят о нас другие.</p>
+                    </div>
+
+                    <div id="disqus_thread"></div>
+                </div>
+            </section>
+        </main>
+
+    <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Компания</h3>
+                    <a href="index.html#about">О нас</a>
+                    <a href="index.html#services">Услуги</a>
+                    <a href="index.html#gallery">Наши работы</a>
+                    <a href="index.html#advantages">Преимущества</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-phone"></i> +7 (930) 970-82-54</p>
+                    <p><i class="fas fa-envelope"></i>kolodtsy.vodosnabzheniye@mail.ru</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Москва и область</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Режим работы</h3>
+                    <p>Пн-Пт: 8:00 - 20:00</p>
+                    <p>Сб-Вс: 9:00 - 18:00</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Соцсети</h3>
+                    <div class="social-links">
+                        <a href="https://wa.me/79309708254" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://t.me/+79309708254" aria-label="Telegram" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
+                    </div>
+                    <button class="callback-button">Заказать звонок</button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 "Вода Надолго". Все права защищены.</p>
+                <a href="privacy.html">Политика конфиденциальности</a>
+            </div>
+        </footer>
+    </div>
+
+    <button id="backToTop" class="back-to-top" aria-label="Наверх">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div class="modal" id="callbackModal">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Закрыть окно">&times;</button>
+            <h3>Заказать звонок</h3>
+            <form class="modal-form" id="callbackForm">
+                <input type="text" name="name" placeholder="Ваше имя" required autocomplete="name">
+                <input type="tel" name="phone" placeholder="Ваш телефон" required autocomplete="tel">
+                <textarea name="question" placeholder="Ваш вопрос (необязательно)"></textarea>
+                <button type="submit">Отправить</button>
+                <p class="privacy-text">Нажимая кнопку, вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a></p>
+            </form>
+        </div>
+    </div>
+
+        
+    </div>
+
+    <script src="script.js"></script>
+    
+    <script>
+        /**
+        * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        
+        var disqus_config = function () {
+            this.page.url = 'https://vodanadolgo.com/reviews.html';  // Замените на канонический URL вашей страницы
+            this.page.identifier = 'reviews-page'; // Замените на уникальный идентификатор вашей страницы
+        };
+        
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://vodanadolgo.disqus.com/embed.js'; // Замените YOUR_SHORTNAME на ваше уникальное имя Disqus
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Пожалуйста, включите JavaScript, чтобы просмотреть <a href="https://disqus.com/?ref_noscript">комментарии на движке Disqus.</a></noscript>
+</body>
+</html>

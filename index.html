@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="description" content="Профессиональное бурение колодцев в Москве и области. Чистка, ремонт колодцев, водоснабжение дома. Гарантия. Бесплатный выезд и консультация.">
+    <meta name="keywords" content="бурение колодцев, водоснабжение, чистка колодцев, ремонт колодцев, москва, московская область">
+    <meta property="og:title" content="Вода Надолго - профессиональное бурение колодцев">
+    <meta property="og:description" content="Качественные решения для водоснабжения вашего дома с гарантией.">
+    <meta property="og:image" content="https://vodanadolgo.ru/images/logo.webp">
+    <meta property="og:url" content="https://vodanadolgo.ru">
+    <meta property="og:type" content="website">
+    <title>Вода Надолго - профессиональное бурение колодцев в Москве и области</title>
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style">
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    <link rel="canonical" href="https://vodanadolgo.ru"/>
+    <link rel="preload" href="images/hero-bg.webp" as="image">
+    <link rel="preload" href="images/logo.webp" as="image">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <meta name="theme-color" content="#3498db">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Вода Надолго",
+      "image": "https://vodanadolgo.ru/images/logo.webp",
+      "telephone": "+79309708254",
+      "email": "kolodtsy.vodosnabzheniye@mail.ru",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Москва",
+        "addressRegion": "Московская область"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "20:00"
+      },
+      "sameAs": [
+        "https://wa.me/79309708254",
+        "https://t.me/+79309708254"
+      ]
+    }
+    </script>
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <div class="header-container">
+                <a href="index.html#hero" class="logo" aria-label="На главную">
+                    <picture>
+                        <source srcset="images/logo.webp" type="image/webp">
+                        <img src="images/logo.png" alt="Логотип" class="logo-img" width="60" height="60">
+                    </picture>
+                    <div class="logo-text">
+                        <span class="logo-part1">Вода</span>
+                        <span class="logo-part2">НаДолго</span>
+                    </div>
+                </a>
+                <button id="menuBtn" class="menu-btn" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+        <nav id="sideMenu" class="side-menu">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h3>Меню</h3>
+                    <button id="closeMenuBtn" class="close-btn" aria-label="Закрыть меню">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <div class="menu-links">
+                    <a href="#hero" class="menu-link active" data-section="hero">
+                        <i class="fas fa-home"></i>
+                        <span>Главная</span>
+                    </a>
+                    <a href="#services" class="menu-link" data-section="services">
+                        <i class="fas fa-concierge-bell"></i>
+                        <span>Услуги</span>
+                    </a>
+                    <a href="#advantages" class="menu-link" data-section="advantages">
+                        <i class="fas fa-star"></i>
+                        <span>Преимущества</span>
+                    </a>
+                    <a href="#gallery" class="menu-link" data-section="gallery">
+                        <i class="fas fa-camera"></i>
+                        <span>Наши работы</span>
+                    </a>
+                    <a href="#about" class="menu-link" data-section="about">
+                        <i class="fas fa-info-circle"></i>
+                        <span>О нас</span>
+                    </a>
+                   <a href="#contacts" class="menu-link" data-section="contacts">
+                        <i class="fas fa-envelope"></i>
+                        <span>Контакты</span>
+                    </a>
+                    <a href="reviews.html" class="menu-link">
+                        <i class="fas fa-comment-alt"></i>
+                        <span>Отзывы</span>
+                    </a>
+                </div>
+
+                <div class="menu-footer">
+                    <div class="phone-container">
+                        <a href="tel:+79309708254" class="phone-link">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+7 (930) 970-82-54</span>
+                        </a>
+                        <p class="call-text">Звоните с 8:00 до 20:00</p>
+                        
+                        <div class="messenger-buttons">
+                            <a href="https://wa.me/79309708254" class="messenger-btn whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Написать в WhatsApp">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                            <a href="https://t.me/+79309708254" class="messenger-btn telegram" target="_blank" rel="noopener noreferrer" aria-label="Написать в Telegram">
+                                <i class="fab fa-telegram"></i> Telegram
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://wa.me/79309708254" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://t.me/+79309708254" aria-label="Telegram" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="menu-overlay"></div>
+
+        <main>
+            <section id="hero" class="hero">
+                <div class="hero-content">
+                    <h1>Профессиональное водоснабжение</h1>
+                    <p>Качественные решения для вашего дома и участка с гарантией</p>
+                    <a href="#contacts" class="btn">Заказать консультацию</a>
+                </div>
+            </section>
+            <section id="services" class="services-section">
+                <div class="section-header">
+                    <h2>Наши услуги</h2>
+                    <p class="section-subtitle">Комплексные решения для водоснабжения</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <h3>Колодцы</h3>
+                        <ul class="service-list">
+                            <li>Бурение колодцев с нуля</li>
+                            <li>Чистка колодцев</li>
+                            <li>Углубление колодцев</li>
+                            <li>Ремонт колодцев</li>
+                            <li>Обслуживание и профилактика</li>
+                            <li>Консервация старых колодцев</li>
+                            <li>Разморозка колодцев</li>
+                        </ul>
+                        <button class="service-button" data-service="Колодцы">Узнать стоимость</button>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Водоснабжение</h3>
+                        <ul class="service-list">
+                            <li>Подключение воды в дом</li>
+                            <li>Наружное водоснабжение</li>
+                            <li>Монтаж водопроводных систем</li>
+                            <li>Установка насосов и фильтров</li>
+                            <li>Автоматизация водоснабжения</li>
+                            <li>Системы полива</li>
+                        </ul>
+                        <button class="service-button" data-service="Водоснабжение">Узнать стоимость</button>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Дополнительно</h3>
+                        <ul class="service-list">
+                            <li>Консультации специалистов</li>
+                            <li>Проектирование систем</li>
+                            <li>Работы "под ключ"</li>
+                            <li>Экспертиза качества воды</li>
+                            <li>Аварийный выезд</li>
+                            <li>Гарантийное обслуживание</li>
+                        </ul>
+                        <button class="service-button" data-service="Дополнительные услуги">Узнать стоимость</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="advantages" class="advantages-section">
+                <div class="section-header">
+                    <h2>Почему выбирают нас</h2>
+                    <p class="section-subtitle">Наши преимущества перед конкурентами</p>
+                </div>
+                <div class="advantages-grid">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3>10 лет опыта</h3>
+                        <p>Более 500 успешно реализованных проектов по водоснабжению</p>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>Качество материалов</h3>
+                        <p>Используем только проверенные материалы от надежных поставщиков</p>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Профессионализм</h3>
+                        <p>Все работы выполняют квалифицированные специалисты с большим опытом</p>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3>Соблюдение сроков</h3>
+                        <p>Строго придерживаемся оговоренных сроков выполнения работ</p>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Гарантия</h3>
+                        <p>Предоставляем гарантию на все виды выполненных работ</p>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-ruble-sign"></i>
+                        </div>
+                        <h3>Прозрачные цены</h3>
+                        <p>Фиксированная стоимость без скрытых платежей и переплат</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="gallery" class="gallery-section">
+                <div class="section-header">
+                    <h2>Наши работы</h2>
+                    <p class="section-subtitle">Примеры выполненных проектов</p>
+                </div>
+                <div class="gallery-container" id="lightgallery">
+                    <a href="images/kolodec1.webp" class="gallery-item" data-sub-html="<h4>Новый колодец</h4><p>Глубина 8 колец, установка донного фильтра</p>">
+                        <picture>
+                            <source srcset="images/kolodec1.webp" type="image/webp">
+                            <img src="images/kolodec1.webp" alt="Колодец глубиной 8 колец с донным фильтром" loading="lazy" width="400" height="300">
+                        </picture>
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <p>Колодец 8 колец</p>
+                        </div>
+                    </a>
+                    <a href="images/kolodec2.jpg" class="gallery-item" data-sub-html="<h4>Чистка колодца</h4><p>Полная чистка и дезинфекция колодца</p>">
+                        <picture>
+                            <source srcset="images/kolodec2.webp" type="image/webp">
+                            <img src="images/kolodec2.jpg" alt="Процесс чистки и дезинфекции колодца" loading="lazy" width="400" height="300">
+                        </picture>
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <p>Чистка колодца</p>
+                        </div>
+                    </a>
+                    <a href="images/vodosnabzhenie1.jpg" class="gallery-item" data-sub-html="<h4>Водоснабжение дома</h4><p>Подключение воды в дом с установкой насосной станции</p>">
+                        <picture>
+                            <source srcset="images/vodosnabzhenie1.webp" type="image/webp">
+                            <img src="images/vodosnabzhenie1.jpg" alt="Подключение воды в дом с насосной станцией" loading="lazy" width="400" height="300">
+                        </picture>
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <p>Водоснабжение дома</p>
+                        </div>
+                    </a>
+                    <a href="images/kolodec3.jpg" class="gallery-item" data-sub-html="<h4>Ремонт колодца</h4><p>Укрепление шахты колодца</p>">
+                        <picture>
+                            <source srcset="images/kolodec3.webp" type="image/webp">
+                            <img src="images/kolodec3.jpg" alt="Ремонт и укрепление шахты колодца" loading="lazy" width="400" height="300">
+                        </picture>
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <p>Ремонт колодца</p>
+                        </div>
+                    </a>
+                    <a href="images/filter1.jpg" class="gallery-item" data-sub-html="<h4>Установка фильтров</h4><p>Монтаж системы очистки воды</p>">
+                        <picture>
+                            <source srcset="images/filter1.webp" type="image/webp">
+                            <img src="images/filter1.jpg" alt="Установка системы фильтрации воды" loading="lazy" width="400" height="300">
+                        </picture>
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <p>Установка фильтров</p>
+                        </div>
+                    </a>
+                    <a href="images/poliv1.jpg" class="gallery-item" data-sub-html="<h4>Система полива</h4><p>Автоматическая система полива участка</p>">
+                        <picture>
+                            <source srcset="images/poliv1.webp" type="image/webp">
+                            <img src="images/poliv1.jpg" alt="Автоматическая система полива участка" loading="lazy" width="400" height="300">
+                        </picture>
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <p>Система полива</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <div class="cta-content">
+                    <h2>Нужна консультация специалиста?</h2>
+                    <p>Оставьте заявку и мы перезвоним вам в течение 15 минут</p>
+                    <form class="cta-form" id="ctaForm">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                        <input type="tel" name="phone" placeholder="Ваш телефон" required>
+                        <button type="submit">Заказать звонок</button>
+                    </form>
+                    <p class="privacy-text">Нажимая кнопку, вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a></p>
+                </div>
+            </section>
+
+            <section id="about" class="about-section">
+                <div class="section-header">
+                    <h2>О нашей компании</h2>
+                    <p class="section-subtitle">10 лет опыта в создании надежных систем водоснабжения</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Компания "Вода Надолго" специализируется на создании индивидуальных решений для водоснабжения частных домов и участков в Москве и Московской области. Мы предлагаем полный комплекс услуг - от проектирования до монтажа и обслуживания систем водоснабжения.</p>
+                        <p>Наша команда состоит из квалифицированных специалистов с многолетним опытом работы. Мы используем только качественные материалы и современное оборудование, что позволяет нам гарантировать долговечность и надежность всех выполненных работ.</p>
+                        <p>Основные принципы нашей работы: индивидуальный подход к каждому клиенту, соблюдение сроков, прозрачное ценообразование и гарантия качества.</p>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-text">Лет опыта</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-text">Реализованных проектов</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-text">Поддержка клиентов</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-text">Гарантия качества</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contacts" class="contacts-section">
+                <div class="section-header">
+                    <h2>Контакты</h2>
+                    <p class="section-subtitle">Свяжитесь с нами удобным способом</p>
+                </div>
+                <div class="contacts-container">
+                    <div class="contacts-info">
+                        <div class="contact-card">
+                            <i class="fas fa-phone"></i>
+                            <h3>Телефон</h3>
+                            <a href="tel:+79309708254">+7 (930) 970-82-54</a>
+                            <p>Звоните с 8:00 до 20:00</p>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email</h3>
+                            <a href="mailto:kolodtsy.vodosnabzheniye@mail.ru">kolodtsy.vodosnabzheniye@mail.ru</a>
+                            <p>Ответим в течение дня</p>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Адрес</h3>
+                            <p>Москва, Московская область</p>
+                            <p>Работаем по всему региону</p>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fas fa-clock"></i>
+                            <h3>Режим работы</h3>
+                            <p>Пн-Пт: 8:00 - 20:00</p>
+                            <p>Сб-Вс: 9:00 - 18:00</p>
+                        </div>
+                    </div>
+                    <div class="contacts-map">
+                        <iframe src="https://yandex.ru/map-widget/v1/?lang=ru_RU&scroll=true" 
+                            frameborder="0" 
+                            allowfullscreen="true" 
+                            loading="lazy" 
+                            title="Карта работы компании Вода Надолго">
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Компания</h3>
+                    <a href="#about">О нас</a>
+                    <a href="#services">Услуги</a>
+                    <a href="#gallery">Наши работы</a>
+                    <a href="#advantages">Преимущества</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-phone"></i> +7 (930) 970-82-54</p>
+                    <p><i class="fas fa-envelope"></i>kolodtsy.vodosnabzheniye@mail.ru</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Москва и область</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Режим работы</h3>
+                    <p>Пн-Пт: 8:00 - 20:00</p>
+                    <p>Сб-Вс: 9:00 - 18:00</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Соцсети</h3>
+                    <div class="social-links">
+                        <a href="https://wa.me/79309708254" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://t.me/+79309708254" aria-label="Telegram" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
+                    </div>
+                    <button class="callback-button">Заказать звонок</button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 "Вода Надолго". Все права защищены.</p>
+                <a href="privacy.html">Политика конфиденциальности</a>
+            </div>
+        </footer>
+    </div>
+
+    <button id="backToTop" class="back-to-top" aria-label="Наверх">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div class="modal" id="callbackModal">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Закрыть окно">&times;</button>
+            <h3>Заказать звонок</h3>
+            <form class="modal-form" id="callbackForm">
+                <input type="text" name="name" placeholder="Ваше имя" required autocomplete="name">
+                <input type="tel" name="phone" placeholder="Ваш телефон" required autocomplete="tel">
+                <textarea name="question" placeholder="Ваш вопрос (необязательно)"></textarea>
+                <button type="submit">Отправить</button>
+                <p class="privacy-text">Нажимая кнопку, вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a></p>
+            </form>
+        </div>
+    </div>
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/6.4.3/imask.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
