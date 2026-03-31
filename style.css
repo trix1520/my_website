@@ -51,7 +51,6 @@ header {
 }
 
 .header-container {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
@@ -298,6 +297,7 @@ header {
     display: flex;
     gap: 15px;
     margin-top: 20px;
+    text-decoration: none;
 }
 
 .social-links a {
