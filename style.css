@@ -332,7 +332,7 @@ header {
 }
 
 .messenger-btn.whatsapp:hover {
-    background-color: #1da851;
+    filter: brightness(90%); 
 }
 
 .messenger-btn.telegram {
@@ -340,23 +340,23 @@ header {
 }
 
 .messenger-btn.telegram:hover {
-    background-color: #0077b3;
+    filter: brightness(90%); 
 }
 
 .messenger-btn.MAX{
-    background-color: #0088cc;
+    background-color: #b746fa;
 }
 
 .messenger-btn.MAX:hover {
-    background-color: #0077b3;
+    filter: brightness(90%); 
 }
 
 .messenger-btn.IMO{
-    background-color: #0088cc;
+    background-color: #344abb;
 }
 
 .messenger-btn.IMO:hover {
-    background-color: #0077b3;
+    filter: brightness(90%); 
 }
 
 /* основное содержимое */
