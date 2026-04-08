@@ -293,31 +293,6 @@ header {
     margin-top: 5px;
 }
 
-.social-links {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-    text-decoration: none;
-}
-
-.social-links a {
-    color: white;
-    font-size: 1.2rem;
-    transition: var(--transition);
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.1);
-}
-
-.social-links a:hover {
-    background: var(--primary-color);
-    transform: translatey(-3px);
-}
-
 .messenger-buttons {
     display: flex;
     flex-direction: column;
@@ -347,6 +322,10 @@ header {
     margin-right: 8px;
     font-size: 1.2rem;
 }
+.messenger-btn img {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
 
 .messenger-btn.whatsapp {
     background-color: #25d366;
@@ -364,8 +343,21 @@ header {
     background-color: #0077b3;
 }
 
+.messenger-btn.MAX{
+    background-color: #0088cc;
+}
 
+.messenger-btn.MAX:hover {
+    background-color: #0077b3;
+}
 
+.messenger-btn.IMO{
+    background-color: #0088cc;
+}
+
+.messenger-btn.IMO:hover {
+    background-color: #0077b3;
+}
 
 /* основное содержимое */
 main {
@@ -984,15 +976,22 @@ footer {
     text-decoration: underline;
 }
 
+footer .social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
 footer .social-links a {
+    color: white;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
-    margin: 0 5px;
-    border-radius: 50%;
-    font-size: 20px;
     color: #fff;
     background-color: #333;
     transition: all 0.3s ease;
@@ -1008,6 +1007,14 @@ footer .social-links a[aria-label="whatsapp"] {
 
 footer .social-links a[aria-label="telegram"] {
     background-color: #0088cc;
+}
+
+footer .social-links a[aria-label="MAX"] {
+    background-color: #b746fa;
+}
+
+footer .social-links a[aria-label="IMO"] {
+    background-color: #344abb;
 }
 
 
